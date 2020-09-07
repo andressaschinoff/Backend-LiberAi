@@ -1,13 +1,11 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const levelSchema = mongoose.Schema({
-  course: { type: Number, required: true },
-  video: { type: Number, required: true },
-  extraQuizz: { type: Number, required: true },
-  battle: { type: Number, required: true },
-  opcional: { type: Number, required: true },
+  title: { type: String, required: true },
+  mandatoryActivities: [{ activityId: { type: Number, required: true } }],
+  bankPrize: { type: String, required: true },
 });
 
-const levelModel = mongoose.model('levels', levelSchema);
+const levelModel = mongoose.model("levels", levelSchema);
 
 export { levelModel };

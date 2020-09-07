@@ -1,15 +1,23 @@
-import { levelModel } from "../models/levelModels.js";
+import { activityModel } from "../models/activityModels.js";
 
-const create = async (req, res) => {
+const create = async (_req, res) => {
+  const type = req.body.type;
   const title = req.body.title;
-  const mandatoryActivities = req.body.mandatoryActivities;
-  const bankPrize = req.body.bankPrize;
+  const teacher = req.body.teacher;
+  const score = req.body.score;
+  const time = req.body.time;
+  const image = req.body.image;
+  const levelRequired = req.body.levelRequired;
 
   try {
-    const newLevel = await levelModel.insertMany({
+    const newLevel = await activityModel.insertMany({
       title: title,
-      mandatoryActivities: mandatoryActivities,
-      bankPrize: bankPrize,
+      type: type,
+      teacher: teacher,
+      score: score,
+      time: time,
+      image: image,
+      levelRequired: levelRequired,
     });
     res.send(newLevel);
   } catch (error) {
@@ -19,7 +27,7 @@ const create = async (req, res) => {
 
 const findAll = async (_req, res) => {
   try {
-    const allLevels = await levelModel.find({});
+    const allLevels = await activityModel.find({});
 
     res.send(allLevels);
   } catch (error) {
@@ -33,7 +41,7 @@ const findOne = async (req, res) => {
   const id = req.params.id;
 
   try {
-    const level = await levelModel.findById(id);
+    const level = await activityModel.findById(id);
     res.send(level);
   } catch (error) {
     res.status(500).send({ message: "Could not find level id: " + id });
@@ -48,15 +56,23 @@ const update = async (req, res) => {
   }
 
   const id = req.params.id;
+  const type = req.body.type;
   const title = req.body.title;
-  const mandatoryActivities = req.body.mandatoryActivities;
-  const bankPrize = req.body.bankPrize;
+  const teacher = req.body.teacher;
+  const score = req.body.score;
+  const time = req.body.time;
+  const image = req.body.image;
+  const levelRequired = req.body.levelRequired;
 
   try {
-    await levelModel.findByIdAndUpdate(id, {
+    await activityModel.findByIdAndUpdate(id, {
       title: title,
-      mandatoryActivities: mandatoryActivities,
-      bankPrize: bankPrize,
+      type: type,
+      teacher: teacher,
+      score: score,
+      time: time,
+      image: image,
+      levelRequired: levelRequired,
     });
     res.send({ message: "Level updated!" });
   } catch (error) {
@@ -68,7 +84,7 @@ const remove = async (req, res) => {
   const id = req.params.id;
 
   try {
-    await levelModel.findByIdAndRemove(id);
+    await activityModel.findByIdAndRemove(id);
     res.send({ message: "Level successful removed" });
   } catch (error) {
     res.status(500).send({ message: "Could not remove level id: " + id });
