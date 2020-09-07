@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const levelSchema = mongoose.Schema({
   title: { type: String, required: true },
-  mandatoryActivities: [{ activityId: { type: Number, required: true } }],
+  mandatoryActivities: [{ type: String, required: true }],
   bankPrize: { type: String, required: true },
 });
 

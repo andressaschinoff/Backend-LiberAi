@@ -1,10 +1,11 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import cors from 'cors';
+import express from "express";
+import bodyParser from "body-parser";
+import cors from "cors";
 
-import { userRouter } from './routes/userRouter.js';
-import { levelRouter } from './routes/levelRouter.js';
-import { db } from './models/index.js';
+import { userRouter } from "./routes/userRouter.js";
+import { levelRouter } from "./routes/levelRouter.js";
+import { activityRouter } from "./routes/activityRouter.js";
+import { db } from "./models/index.js";
 
 (async () => {
   try {
@@ -12,7 +13,7 @@ import { db } from './models/index.js';
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
-    console.log('DB connected');
+    console.log("DB connected");
   } catch (error) {
     console.log(`Error in db connection! ${error}`);
 
@@ -31,11 +32,12 @@ app.use(
   })
 );
 
-app.use('/users', userRouter);
-app.use('/levels', levelRouter);
+app.use("/users", userRouter);
+app.use("/levels", levelRouter);
+app.use("/activities", activityRouter);
 
-app.get('/', (req, res) => {
-  res.send('API em execucao');
+app.get("/", (req, res) => {
+  res.send("API em execucao");
 });
 
 app.listen(process.env.PORT || 3001, () => {

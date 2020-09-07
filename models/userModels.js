@@ -5,7 +5,7 @@ const userSchema = mongoose.Schema({
   profileImage: { type: String },
   score: { type: Number },
   level: { type: Number },
-  activities: [{ activityId: { type: Number } }],
+  activities: [{ type: String }],
 });
 
 const userModel = mongoose.model("users", userSchema);

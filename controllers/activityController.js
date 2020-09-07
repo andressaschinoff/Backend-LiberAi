@@ -1,8 +1,8 @@
 import { activityModel } from "../models/activityModels.js";
 
-const create = async (_req, res) => {
-  const type = req.body.type;
+const create = async (req, res) => {
   const title = req.body.title;
+  const type = req.body.type;
   const teacher = req.body.teacher;
   const score = req.body.score;
   const time = req.body.time;
@@ -56,8 +56,8 @@ const update = async (req, res) => {
   }
 
   const id = req.params.id;
-  const type = req.body.type;
   const title = req.body.title;
+  const type = req.body.type;
   const teacher = req.body.teacher;
   const score = req.body.score;
   const time = req.body.time;
