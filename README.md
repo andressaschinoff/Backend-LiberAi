@@ -39,11 +39,11 @@ Burocratização do alcance ao crédito financeiro.
 
 ## :nut_and_bolt: Funcionalidades
 
-<p> ✔️ Rota 1 - Atividades: Busca todas as atividades cadastradas no banco de dados.</p>
+<p> ✔️ Rota 1 - Atividades(activities): Busca todas as atividades cadastradas no banco de dados.</p>
 
-<p> ✔️ Rota 2 - Usuários: Busca todos os usuários cadastrados. </p>
+<p> ✔️ Rota 2 - Usuários(users): Busca todos os usuários cadastrados. </p>
 
-<p> ✔️ Rota 3 - Níveis: Busca todos os níveis cadastrados. </p>
+<p> ✔️ Rota 3 - Níveis(levels): Busca todos os níveis cadastrados. </p>
 
 ---
 
