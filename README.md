@@ -22,7 +22,7 @@
 
 ## :information_source: Sobre o Projeto
 
-LiberAí é uma aplicação que ensina educação financeira para 
+Promover a liberção de crédito financeiro para a classe média "C" por meio de educação financeira
 
 ---
 
@@ -32,9 +32,9 @@ LiberAí é uma aplicação que ensina educação financeira para
 
 ## :interrobang: Motivo
 
-Levando em consideração o cenário de Pandemia, e a preocupação constante devido ao aumento da curva de contágio do Vírus, desenvolvemos uma aplicação Web para trazer esses dados, que se atualizam em tempo real.
+Limitação do acesso ao crédito bancário de 45 milhões de pessoas no Brasil.
 
-O grande intuito é amparar à população em meio a esta situação de crise de Saúde Pública através de um Portal Web com ferramentas que apresentem informações da atual situação do contágio em todo o território nacional.
+Burocratização do alcance ao crédito financeiro.
 
 ---
 
