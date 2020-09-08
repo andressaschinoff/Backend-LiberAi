@@ -21,7 +21,7 @@
 
 ## :information_source: Sobre o Projeto
 
-Promover a liberção de crédito financeiro para a classe média "C" por meio de educação financeira
+O Liberaí é uma plataforma que facilita o acesso ao crédito financeiro para pessoas que realmente precisam através da promoção da educação financeira e estímulo ao uso consciente do crédito alcançado através de uma trilha de aprendizagem, onde o usuário é o protagonista da sua própria jornada em busca de crédito financeiro.
 
 ---
 
