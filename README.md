@@ -134,7 +134,7 @@ _PS: Talvez você precise forçar um push para o seu próprio repositório do Gi
   </a>
 
    <a href="https://github.com/JuDCraide">
-    <img src="https://avatars3.githubusercontent.com/u/47929434?s=460&u=1a37672c81408f7857c45a36cdcc3c57c00a827c&v=4">
+    <img src="https://avatars3.githubusercontent.com/u/47929434?s=460&u=1a37672c81408f7857c45a36cdcc3c57c00a827c&v=4" title="Júlia D Craide" width="80" height="80">
   </a>
 </P>
 
