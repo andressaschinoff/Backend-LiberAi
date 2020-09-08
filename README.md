@@ -10,8 +10,7 @@
 </h3>
 <h3 align="center">
   <a href="#running-demonstração-da-aplicação">Demostração da Aplicação</a> |
-  <a href="#package-como-baixar-o-projeto">Como baixar o projeto</a> |
-  <a href="#link-como-contribuir">Como contribuir</a>
+  <a href="#package-como-baixar-o-projeto">Como baixar o projeto</a>
 </>
 <h3 align="center">
   <a href="#recycle-como-atualizar-seu-fork">Como atualizar seu fork</a> |
